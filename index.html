@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="地域課題を、課題で終わらせない。判断と実装を、組織として引き受ける。学チャレ合同会社は、会社全体を「地域事業開発室」として運営する実装組織です。">
+    <meta name="keywords" content="地域事業開発, PoC, 実証実験, 事業共創, 学チャレ合同会社">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="学チャレ合同会社 - 地域課題を、課題で終わらせない。">
+    <meta property="og:description" content="判断と実装を、組織として引き受ける。実証(PoC)→判断→展開までを一貫して担います。">
+    <meta property="og:type" content="website">
+
+    <title>学チャレ合同会社 - 地域課題を、課題で終わらせない</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Section A: Header -->
+    <header id="header" class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="media/スクリーンショット 2026-01-29 153035.png" alt="学チャレ合同会社ロゴ" style="height: 45px; width: auto;">
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#flow" class="nav-link">進め方</a></li>
+                    <li><a href="#services" class="nav-link">サービス</a></li>
+                    <li><a href="#cases" class="nav-link">実績</a></li>
+                    <li><a href="#team" class="nav-link">組織</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="#contact" class="btn btn-secondary">事業の進め方を見る</a>
+                <a href="#contact" class="btn btn-primary">PoC・連携を相談する</a>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section B: Hero -->
+        <section id="hero" class="hero">
+            <div class="hero-background"></div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-catch">地域課題を、<br>課題で終わらせない。</h2>
+                    <p class="hero-subcatch">判断と実装を、組織として引き受ける。</p>
+                    <p class="hero-description">
+                        学チャレ合同会社は、会社全体を「地域事業開発室」として運営する実装組織です。<br>
+                        実証(PoC)→ 判断 → 展開までを一貫して担います。
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary btn-large">PoC・連携を相談する</a>
+                        <a href="#flow" class="btn btn-outline btn-large">3分でわかる：学チャレの進め方</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section C: まず誤解を潰す -->
+        <section id="clarification" class="clarification">
+            <div class="container">
+                <div class="clarification-block">
+                    <p class="clarification-line">学チャレは"部署"ではありません。</p>
+                    <p class="clarification-line">会社そのものが、地域事業開発室です。</p>
+                    <p class="clarification-line">すべてのメンバーが、地域事業開発の室員です。</p>
+                </div>
+                <div class="clarification-note">
+                    <p>学生は実装に参加する協働者。設計・判断・責任は室員が担います。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section D: 課題共感 -->
+        <section id="problems" class="problems">
+            <div class="container">
+                <h2 class="section-title">地域事業が止まる理由は、<br>アイデア不足ではありません。</h2>
+                <div class="problems-grid">
+                    <div class="problem-card">
+                        <div class="problem-icon">⚠️</div>
+                        <p class="problem-text">PoCで終わり、<br>導入判断ができない</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">👥</div>
+                        <p class="problem-text">運用の担い手が<br>いない</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">❓</div>
+                        <p class="problem-text">責任の所在が<br>曖昧になる</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">🔄</div>
+                        <p class="problem-text">担当者が変わると<br>止まる（属人化）</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section E: 解決策 -->
+        <section id="solution" class="solution">
+            <div class="container">
+                <h2 class="section-title">学チャレが提供するのは「支援」ではなく、<br>止まらない運用と判断の構造です。</h2>
+                <div class="solution-grid">
+                    <div class="solution-card">
+                        <div class="solution-icon">🎯</div>
+                        <h3 class="solution-title">現場起点で進める</h3>
+                        <p class="solution-text">合意形成・運用前提で設計します</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">🔬</div>
+                        <h3 class="solution-title">小さく試し、必ず判断する</h3>
+                        <p class="solution-text">PoCは判断材料として活用します</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">📋</div>
+                        <h3 class="solution-title">線引きを明確にする</h3>
+                        <p class="solution-text">やる/やらないを明文化します</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section F: 事業フロー -->
+        <section id="flow" class="flow">
+            <div class="container">
+                <h2 class="section-title">地域事業は、こうして前に進みます。</h2>
+                <div class="flow-diagram">
+                    <div class="flow-step">
+                        <div class="flow-step-number">1</div>
+                        <div class="flow-step-label">課題</div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step flow-step-highlight">
+                        <div class="flow-step-number">2</div>
+                        <div class="flow-step-label">地域事業開発室<br><span class="flow-step-sublabel">（全社）</span></div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-step-number">3</div>
+                        <div class="flow-step-label">PoC<br><span class="flow-step-sublabel">（実証）</span></div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-step-number">4</div>
+                        <div class="flow-step-label">判断<br><span class="flow-step-sublabel">(Go/No-Go/変更)</span></div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-step-number">5</div>
+                        <div class="flow-step-label">展開</div>
+                    </div>
+                </div>
+                <p class="flow-note">PoCはゴールではありません。次に進めるかどうかを決める材料を残します。</p>
+
+                <!-- ビジネスモデル図 -->
+                <div style="margin-top: 2.5rem;">
+                    <img src="media/スクリーンショット 2026-01-29 153024.png" alt="学チャレビジネスモデル図"
+                        style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: var(--shadow-md);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section G: 展開の2つの出口 -->
+        <section id="exits" class="exits">
+            <div class="container">
+                <h2 class="section-title">PoCのあと、必ず"出口"を決めます。</h2>
+                <div class="exits-grid">
+                    <div class="exit-card">
+                        <div class="exit-number">①</div>
+                        <h3 class="exit-title">運営支援（受託型）</h3>
+                        <p class="exit-description">主体は地域/企業、学チャレは事務局・運用・実装を担う</p>
+                    </div>
+                    <div class="exit-card">
+                        <div class="exit-number">②</div>
+                        <h3 class="exit-title">事業共創（事業化型）</h3>
+                        <p class="exit-description">共同事業・SPV・持分参画などで事業として進める</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section H: 提供サービス -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">提供サービスは「判断まで含めた実装」です。</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🚀</div>
+                        <h3 class="service-title">PoC・事業開発支援</h3>
+                        <ul class="service-list">
+                            <li>課題整理</li>
+                            <li>PoC設計</li>
+                            <li>評価</li>
+                            <li>判断材料の作成</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3 class="service-title">運営支援（共創BPO）</h3>
+                        <ul class="service-list">
+                            <li>事務局運営</li>
+                            <li>PMO</li>
+                            <li>品質管理</li>
+                            <li>記録・ドキュメント作成</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎓</div>
+                        <h3 class="service-title">大学・教育プログラム接続</h3>
+                        <ul class="service-list">
+                            <li>運営受託</li>
+                            <li>教育プログラム接続</li>
+                            <li>大学連携設計</li>
+                            <li>（教育の主導は大学）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section I: やる/やらない -->
+        <section id="boundaries" class="boundaries">
+            <div class="container">
+                <h2 class="section-title">線引きを最初に出します。</h2>
+                <div class="boundaries-grid">
+                    <div class="boundary-column boundary-do">
+                        <h3 class="boundary-title">やること</h3>
+                        <ul class="boundary-list">
+                            <li>
+                                <span class="check">✓</span>
+                                <span>PoC設計・運営・評価、判断材料の整理</span>
+                            </li>
+                            <li>
+                                <span class="check">✓</span>
+                                <span>事務局・進行管理・合意形成</span>
+                            </li>
+                            <li>
+                                <span class="check">✓</span>
+                                <span>記録（成果1枚・意思決定ログ）の作成</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="boundary-column boundary-dont">
+                        <h3 class="boundary-title">やらないこと</h3>
+                        <ul class="boundary-list">
+                            <li>
+                                <span class="cross">✗</span>
+                                <span>開発代行</span>
+                            </li>
+                            <li>
+                                <span class="cross">✗</span>
+                                <span>営業代行</span>
+                            </li>
+                            <li>
+                                <span class="cross">✗</span>
+                                <span>資金調達代行</span>
+                            </li>
+                            <li>
+                                <span class="cross">✗</span>
+                                <span>無制限の相談対応（枠を決める）</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section J: 実績 -->
+        <section id="cases" class="cases">
+            <div class="container">
+                <h2 class="section-title">実績</h2>
+                <div class="cases-grid">
+                    <div class="case-card">
+                        <h3 class="case-title">momentumプロジェクト</h3>
+                        <div class="case-section">
+                            <h4 class="case-label">課題</h4>
+                            <p>新規事業の実証実験設計と評価の枠組みが不明確</p>
+                        </div>
+                        <div class="case-section">
+                            <h4 class="case-label">実装</h4>
+                            <p>PoC設計・運営、評価フレームワーク構築、事務局機能</p>
+                        </div>
+                        <div class="case-section">
+                            <h4 class="case-label">成果物</h4>
+                            <p>成果1枚、運用設計書、意思決定ログ</p>
+                        </div>
+                        <div class="case-section">
+                            <h4 class="case-label">次の判断</h4>
+                            <p>形を変えて継続</p>
+                        </div>
+                    </div>
+
+                    <div class="case-card">
+                        <h3 class="case-title">ルース先生動画案件</h3>
+                        <div class="case-section">
+                            <h4 class="case-label">課題</h4>
+                            <p>教育コンテンツ制作の進行管理と品質担保体制の不在</p>
+                        </div>
+                        <div class="case-section">
+                            <h4 class="case-label">実装</h4>
+                            <p>制作PMO、スケジュール管理、品質チェック、納品管理</p>
+                        </div>
+                        <div class="case-section">
+                            <h4 class="case-label">成果物</h4>
+                            <p>プロジェクト管理表、品質基準書、納品レポート</p>
+                        </div>
+                        <div class="case-section">
+                            <h4 class="case-label">次の判断</h4>
+                            <p>継続運用へ移行</p>
+                        </div>
+                    </div>
+
+                    <div class="case-card">
+                        <h3 class="case-title">工学部シンポジウム</h3>
+                        <div class="case-section">
+                            <h4 class="case-label">課題</h4>
+                            <p>大規模イベント運営の属人化と継続体制の不安定さ</p>
+                        </div>
+                        <div class="case-section">
+                            <h4 class="case-label">実装</h4>
+                            <p>イベント事務局、参加者管理、当日運営、記録作成</p>
+                        </div>
+                        <div class="case-section">
+                            <h4 class="case-label">成果物</h4>
+                            <p>運営マニュアル、参加者データ、振り返りレポート</p>
+                        </div>
+                        <div class="case-section">
+                            <h4 class="case-label">次の判断</h4>
+                            <p>次年度も運営継続</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section K: 組織・責任 -->
+        <section id="team" class="team">
+            <div class="container">
+                <h2 class="section-title">組織・責任</h2>
+                <p class="team-intro">室員が責任を担います。</p>
+
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-role">CEO</div>
+                        <h3 class="team-name">牧野 真雄</h3>
+                        <p class="team-affiliation">組織開発エキスパート<br>株式会社カイシン 代表取締役<br>リマネージ株式会社 代表取締役</p>
+                        <div class="team-responsibility">
+                            <h4>担う責任</h4>
+                            <ul>
+                                <li>意思決定</li>
+                                <li>対外説明責任</li>
+                                <li>全体設計（Go/No-Go含む）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-role">CTO</div>
+                        <h3 class="team-name">野村 信福</h3>
+                        <p class="team-affiliation">えひめ学生起業塾 顧問<br>愛媛大学 大学院理工学研究科 教授<br>「液中プラズマ」技術を開発</p>
+                        <div class="team-responsibility">
+                            <h4>担う責任</h4>
+                            <ul>
+                                <li>技術・研究連携の妥当性</li>
+                                <li>倫理・品質の担保</li>
+                                <li>大学接続の設計</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-role">COO</div>
+                        <h3 class="team-name">石原 裕香</h3>
+                        <p class="team-affiliation">愛媛大学 研究・産学連携推進機構<br>産学連携推進本部 特定准教授<br>えひめ学生起業塾副顧問</p>
+                        <div class="team-responsibility">
+                            <h4>担う責任</h4>
+                            <ul>
+                                <li>運用設計</li>
+                                <li>実装推進（PMO）</li>
+                                <li>関係者合意形成</li>
+                                <li>継続運営の成立</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mission-vision">
+                    <div class="mv-card">
+                        <h3 class="mv-title">MISSION</h3>
+                        <p class="mv-text">
+                            学チャレ合同会社をハブに、大学・企業・自治体が抱える現実の課題を学生チームが受託し、確かなアウトプットとともに学びを"仕事"へ転換。PoCや共創ファンドを通じて次の産学・連携・起業へ続く土台をつくります。
+                        </p>
+                    </div>
+                    <div class="mv-card">
+                        <h3 class="mv-title">VISION</h3>
+                        <p class="mv-text">学び手・地域・産業界が共創し続け、『挑戦のプラットフォーム』を築き、未来を拓く。失敗を恐れず、新しいアイデアやプロジェクトに挑戦できる文化を醸成。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section L: スタートアップ連携デスク -->
+        <section id="startup-desk" class="startup-desk">
+            <div class="container">
+                <h2 class="section-title">スタートアップ連携デスク</h2>
+                <p class="desk-intro">窓口ではなく実装機能</p>
+
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <h3 class="package-title">ライト</h3>
+                        <p class="package-description">まずは小さく相談から始めたい方向け</p>
+                    </div>
+                    <div class="package-card package-featured">
+                        <h3 class="package-title">PoC</h3>
+                        <p class="package-description">実証実験を設計・実行したい方向け</p>
+                    </div>
+                    <div class="package-card">
+                        <h3 class="package-title">拡大</h3>
+                        <p class="package-description">事業として本格展開したい方向け</p>
+                    </div>
+                </div>
+
+                <div class="desk-conditions">
+                    <h3 class="conditions-title">受け入れ条件</h3>
+                    <ul class="conditions-list">
+                        <li>倫理規定の遵守</li>
+                        <li>個人情報保護体制の整備</li>
+                        <li>役割分担の明確化</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section M: FAQ -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">よくある質問</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>PoCの費用感は？</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>まずは2週間のライトプランから始めることをおすすめしています。具体的な費用は案件の規模や内容によって異なりますので、お気軽にご相談ください。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>学生が動くなら責任は誰が？</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>室員が責任を担います。学生は実装に参加する協働者であり、設計・判断・対外的な責任はすべて室員（代表社員を含む）が負います。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>途中で止める判断もできる？</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>むしろ止めるのも価値のある判断です。PoCは「やる/やらない」を決めるための材料を残すプロセスです。途中で中止する判断も、次に進む判断と同じく重要視しています。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>何を準備すれば相談できる？</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>困りごと、現場の状況、関係者、期限感の4点があれば十分です。完璧な資料は不要です。まずは現状をお聞かせください。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>情報管理/個人情報はどうなる？</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>プロジェクト開始前に情報管理ルールを整備することを前提としています。NDAの締結、個人情報保護体制の確認など、適切な管理体制を構築します。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>開発はできますか？</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>開発代行は行っていません。ただし、必要に応じて信頼できる開発パートナーとの連携をサポートします。私たちの強みは判断と実装の構造を作ることです。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section N: 最終CTA -->
+        <section id="contact" class="final-cta">
+            <div class="container">
+                <h2 class="final-cta-title">「やったこと」にしない。<br>次に進める状態をつくります。</h2>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="issue">困りごと</label>
+                        <textarea id="issue" name="issue" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="field">現場</label>
+                        <input type="text" id="field" name="field" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="stakeholders">関係者</label>
+                        <input type="text" id="stakeholders" name="stakeholders" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeline">期限感</label>
+                        <input type="text" id="timeline" name="timeline" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large btn-full">PoC・連携を相談する</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="media/スクリーンショット 2026-01-29 153035.png" alt="学チャレ合同会社ロゴ"
+                        style="height: 35px; width: auto; margin-bottom: 0.5rem;">
+                    <p>地域課題を、課題で終わらせない。</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#flow">進め方</a>
+                    <a href="#services">サービス</a>
+                    <a href="#cases">実績</a>
+                    <a href="#team">組織</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 学チャレ合同会社 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+/* ========================================
+   Business Model Diagram Styles
+   ======================================== */
+.business-model-diagram {
+    margin-top: var(--spacing-3xl);
+    text-align: center;
+}
+
+.diagram-title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+}
+
+.diagram-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    background: var(--bg-primary);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+}
+
+.diagram-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    display: block;
+}
+
+.diagram-caption {
+    margin-top: var(--spacing-md);
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    font-style: italic;
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer logo center alignment */
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-logo-img {
+    height: 35px;
+    width: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .diagram-wrapper {
+        padding: var(--spacing-md);
+    }
+
+    .diagram-title {
+        font-size: var(--font-size-lg);
+    }
+
+    .diagram-caption {
+        font-size: var(--font-size-xs);
+    }
+}

@@ -2096,3 +2096,362 @@ section {
     background: #ffffff;
     border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
+
+/* ========================================
+   Section Lead & Shared Helpers
+   ======================================== */
+.section-lead {
+    text-align: center;
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+    max-width: 680px;
+    margin: -1rem auto var(--spacing-2xl);
+    line-height: 1.6;
+}
+
+.section-emphasis {
+    text-align: center;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-top: var(--spacing-2xl);
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+}
+
+/* ========================================
+   What We Do – Comparison Table
+   ======================================== */
+.what-we-do {
+    background: var(--bg-secondary);
+}
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 auto var(--spacing-xl);
+    max-width: 860px;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    box-shadow: var(--shadow-md);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    font-size: var(--font-size-sm);
+}
+
+.comparison-table thead th {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-weight: 700;
+    font-size: var(--font-size-sm);
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.comparison-table thead th:first-child {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    width: 120px;
+}
+
+.comparison-table thead .col-old {
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--text-secondary);
+}
+
+.comparison-table thead .col-new {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.comparison-table tbody tr {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.comparison-table tbody tr:hover {
+    background: rgba(230, 126, 34, 0.03);
+}
+
+.comparison-table tbody td {
+    padding: var(--spacing-md) var(--spacing-lg);
+    color: var(--text-primary);
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+.comparison-table .row-label {
+    background: var(--bg-secondary);
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.comparison-table .col-old td,
+.comparison-table tbody td:nth-child(2) {
+    color: var(--text-secondary);
+}
+
+.comparison-table tbody td:nth-child(3) {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* ========================================
+   Process – 4-Week Schedule Table
+   ======================================== */
+.process {
+    background: var(--bg-primary);
+}
+
+.subsection-label {
+    text-align: center;
+    font-size: var(--font-size-md);
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-xl);
+    letter-spacing: -0.005em;
+}
+
+.week-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 860px;
+    margin: 0 auto var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    box-shadow: var(--shadow-md);
+}
+
+.week-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-primary);
+    font-size: var(--font-size-sm);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.week-table thead th {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 700;
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-align: left;
+}
+
+.week-table tbody tr {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    transition: background var(--transition-fast);
+}
+
+.week-table tbody tr:hover {
+    background: rgba(230, 126, 34, 0.04);
+}
+
+.week-table tbody td {
+    padding: var(--spacing-md) var(--spacing-lg);
+    color: var(--text-primary);
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
+.week-num {
+    white-space: nowrap;
+    width: 100px;
+}
+
+.week-badge {
+    display: inline-block;
+    background: var(--bg-secondary);
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: var(--font-size-xs);
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(230, 126, 34, 0.25);
+}
+
+.deliverable {
+    font-weight: 600;
+    color: var(--primary-dark);
+    font-size: var(--font-size-xs);
+}
+
+.process-highlight {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    padding: var(--spacing-xl);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    border-left: 3px solid var(--primary-color);
+}
+
+.process-example {
+    font-size: var(--font-size-md);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.process-tagline {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+/* ========================================
+   Team – Structure Grid (above member list)
+   ======================================== */
+.team-structure-grid {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+    max-width: 820px;
+    margin: 0 auto var(--spacing-2xl);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-structure-card {
+    flex: 1;
+    min-width: 260px;
+    background: var(--bg-primary);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.team-structure-card:hover {
+    border-color: rgba(230, 126, 34, 0.2);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.team-structure-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.team-structure-title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: -0.01em;
+}
+
+.team-structure-text {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.team-structure-divider {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.team-tagline {
+    text-align: center;
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 auto var(--spacing-3xl);
+    max-width: 600px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+}
+
+/* ========================================
+   Cases – Evidence Grid (above case cards)
+   ======================================== */
+.evidence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 860px;
+    margin: 0 auto var(--spacing-3xl);
+}
+
+.evidence-card {
+    background: var(--bg-primary);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.evidence-card:hover {
+    border-color: rgba(230, 126, 34, 0.15);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.evidence-icon {
+    font-size: 2.25rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.evidence-title {
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: -0.01em;
+}
+
+.evidence-text {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ========================================
+   Final CTA – Updated copy styles
+   ======================================== */
+.final-cta-sub {
+    text-align: center;
+    font-size: var(--font-size-lg);
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: var(--spacing-2xl);
+    letter-spacing: -0.01em;
+}
+
+/* ========================================
+   Add new sections to the chevron pattern
+   ======================================== */
+.what-we-do,
+.process {
+    position: relative;
+    background:
+        linear-gradient(135deg, rgba(230, 126, 34, 0.015) 25%, transparent 25%),
+        linear-gradient(-135deg, rgba(230, 126, 34, 0.015) 25%, transparent 25%),
+        linear-gradient(45deg, rgba(230, 126, 34, 0.015) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(230, 126, 34, 0.015) 25%, transparent 25%),
+        #f5f5f7;
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 0, 30px -30px, 0 30px;
+}

@@ -28,15 +28,6 @@ gakuLP-main/
 - **JavaScript (Vanilla)** — 外部ライブラリ依存なし。スクロールアニメーション・モバイルメニュー・フォーム送信処理を実装
 - **Google Fonts** — Outfit（見出し）/ Inter（本文）
 ---
-## 🚀 ローカルでの確認方法
-### Python を使う場合
-```bash
-python -m http.server 8000
-```
-→ ブラウザで [http://localhost:8000](http://localhost:8000) を開いてください。
-### VS Code を使う場合
-拡張機能 **「Live Server」** をインストールし、`index.html` を右クリック →「Open with Live Server」。
----
 ## 🎨 デザインシステム
 | 要素 | 値 |
 |---|---|
@@ -56,3 +47,4 @@ python -m http.server 8000
 ---
 ## 📝 ライセンス
 Copyright (c) 2026 学チャレ合同会社 All Rights Reserved.
+

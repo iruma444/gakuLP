@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="綺麗事より、事業の実装を。地域の「困った」を、稼ぎ続ける価値へ変える。4週間で調査・実装・検証・改善提案まで回し、事業化の打ち手を納品する実行体です。">
+    <meta name="keywords" content="地域事業開発, 事業化, 仮説検証, 実装, 学チャレ合同会社">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="学チャレ合同会社 - 綺麗事より、事業の実装を。">
+    <meta property="og:description" content="地域の「困った」を、稼ぎ続ける価値へ変える。4週間で調査・実装・検証・改善提案まで回し、事業化の打ち手を納品する実行体です。">
+    <meta property="og:type" content="website">
+
+    <title>学チャレ合同会社 - 綺麗事より、事業の実装を。</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Section A: Header -->
+    <header id="header" class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="media/ロゴ.png" alt="学チャレ合同会社ロゴ" style="height: 45px; width: auto;">
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li>
+                        <a href="policy.html" class="nav-link">
+                            <span class="nav-label-ja">ポリシー</span>
+                            <span class="nav-label-en">Policy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#cases" class="nav-link">
+                            <span class="nav-label-ja">実績</span>
+                            <span class="nav-label-en">Cases</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.ccr.ehime-u.ac.jp/ehime-entre/#/" class="nav-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="nav-label-ja">起業塾</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link nav-link--cta">
+                            <span class="nav-label-ja">相談する</span>
+                            <span class="nav-label-en">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <aside class="floating-fusen-menu" aria-label="固定メニュー">
+        <a href="https://www.instagram.com/gakuchare/" target="_blank" rel="noopener noreferrer"
+            class="fusen-link fusen-link-instagram" aria-label="Instagramを開く">
+            <img src="media/インスタ.webp" alt="Instagramロゴ" class="fusen-instagram-logo" width="26" height="26">
+            <span>インスタ</span>
+        </a>
+        <a href="https://www.ccr.ehime-u.ac.jp/ehime-entre/#/" target="_blank" rel="noopener noreferrer"
+            class="fusen-link fusen-link-school" aria-label="起業塾のHPを開く">
+            <img src="media/えひめ学生起業塾.png" alt="えひめ学生起業塾ロゴ" class="fusen-school-logo" width="26" height="26">
+            <span class="fusen-school-label">起業塾</span>
+        </a>
+        <a href="#contact" class="fusen-link fusen-link-contact" aria-label="CONTACTへ移動">
+            <span class="fusen-contact-text">CONTACT</span>
+        </a>
+    </aside>
+
+    <main>
+        <!-- Section B: Hero -->
+        <section id="hero" class="hero"
+            style="background-image: url('media/キービジュアル.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <div class="hero-inner">
+                    <img src="media/ロゴ.png" alt="学チャレ合同会社ロゴ" class="hero-logo">
+                    <h1 class="hero-catch">綺麗事より、<br>実装を。</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section①: 「課題を市場に変える」とはどういうことか？ -->
+        <section id="what-we-do" class="what-we-do">
+            <div class="container">
+                <h2 class="section-title scroll-fade-up-text scroll-underline-title">課題を市場に変えるために。</h2>
+                <p class="what-we-do-message scroll-fade-up-text">
+                    私たちは、<br>
+                    <span class="what-we-do-highlight">ボランティアや一過性のイベントで終わる地域活動</span>ではなく、<br>
+                    <span class="what-we-do-highlight">現場ニーズを掘り起こし、市場を設計する事業開発</span>に取り組みます。<br><br>
+                    そのために、<br>
+                    <span class="what-we-do-highlight">支払い主体を特定して収益構造を設計</span>し、<br>
+                    持ち出しや補助金頼みにしない仕組みをつくります。<br><br>
+                    目指すのは、思い出や報告書だけではなく、<br>
+                    <span class="what-we-do-highlight">雇用・税収・継続する事業</span>が地域に残る状態です。
+                </p>
+                <div class="what-we-do-cta scroll-fade-up-text">
+                    <a href="policy.html" class="btn btn-primary btn-large">もっと詳しく知る</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section②: 泥臭い仮説検証の、圧倒的なスピード感 -->
+        <section id="process" class="process">
+            <div class="container">
+                <h2 class="section-title scroll-fade-up-text scroll-underline-title">圧倒的なスピード感。</h2>
+                <p class="process-summary scroll-fade-up-text">
+                    私たちは、机上の検討を長く続けるのではなく、
+                    <span class="process-summary-highlight">現地調査・仮説設計・実装・検証・改善提案</span>を
+                    4週間で一気に回します。
+                    重要なのは、ただ早いことではなく、
+                    <span class="process-summary-highlight">毎週の実行で学習を重ね、次の打ち手に即反映すること</span>。
+                    「いつか動く」ではなく、<span class="process-summary-highlight">今週動いて結果を出す</span>ことを徹底しています。
+                </p>
+                <figure class="process-diagram scroll-fade-up-text">
+                    <img src="media/４週間の図解.png" alt="4週間の実行プロセス図解" loading="lazy">
+                </figure>
+            </div>
+        </section>
+
+        <!-- Section③: 学生がやる意味 -->
+        <section id="student-value" class="student-value">
+            <div class="container">
+                <h2 class="section-title scroll-fade-up-text scroll-underline-title">学生がやる意味。</h2>
+                <p class="student-value-message scroll-fade-up-text">
+                    私たちが学生であることの強みは、<span class="student-value-highlight">現場に素直に入り込み、固定観念に縛られずに仮説を回せること</span>です。
+                    当事者に近い距離で課題を捉え、動きながら学び、短いサイクルで改善できます。<br><br>
+                    ただし、スピードだけでは品質は担保できません。
+                    そこで、<span class="student-value-highlight">組織開発・産学連携・技術領域のプロフェッショナルが設計と成果物を週次で監修</span>し、
+                    実装の精度と再現性を担保しています。
+                </p>
+                <div class="student-value-cta scroll-fade-up-text">
+                    <a href="#cases" class="btn btn-primary btn-large">実績</a>
+                    <a href="https://www.ccr.ehime-u.ac.jp/ehime-entre/#/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-kigyo btn-large">起業塾</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section④: 体制 -->
+        <section id="team" class="team">
+            <div class="container team-layout">
+                <div class="team-tab scroll-fade-up-text">
+                    <span class="team-tab-main">体制</span>
+                    <span class="team-tab-sub">member</span>
+                </div>
+
+                <div class="team-member-grid">
+                    <article class="team-member-card scroll-fade-up-text">
+                        <a href="https://kaisyn.com/" target="_blank" rel="noopener noreferrer" class="team-member-photo-wrap"
+                            aria-label="牧野 真雄のプロフィール（外部リンク）">
+                            <img src="media/牧野.png" alt="牧野 真雄 - CEO" class="team-member-photo" loading="lazy" width="360" height="480">
+                        </a>
+                        <h3 class="team-member-name">牧野 真雄</h3>
+                        <p class="team-member-detail">CEO。組織開発の知見を基に、経営判断と全体戦略の設計を担います。</p>
+                    </article>
+
+                    <article class="team-member-card scroll-fade-up-text">
+                        <a href="https://researchmap.jp/yuka_ishihara" target="_blank" rel="noopener noreferrer"
+                            class="team-member-photo-wrap" aria-label="石原 裕香のプロフィール（外部リンク）">
+                            <img src="media/石原.png" alt="石原 裕香 - COO" class="team-member-photo" loading="lazy" width="360" height="480">
+                        </a>
+                        <h3 class="team-member-name">石原 裕香</h3>
+                        <p class="team-member-detail">COO。産学連携の実務経験を生かし、現場実装とプロジェクト推進を担います。</p>
+                    </article>
+
+                    <article class="team-member-card scroll-fade-up-text">
+                        <a href="https://researchmap.jp/read0183368" target="_blank" rel="noopener noreferrer"
+                            class="team-member-photo-wrap" aria-label="野村 信福のプロフィール（外部リンク）">
+                            <img src="media/野村.png" alt="野村 信福 - CTO" class="team-member-photo" loading="lazy" width="360" height="480">
+                        </a>
+                        <h3 class="team-member-name">野村 信福</h3>
+                        <p class="team-member-detail">CTO。技術と研究の観点から、実装内容の妥当性と品質を監修します。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Section⑤: 実績 -->
+        <section id="cases" class="cases">
+            <div class="container cases-layout">
+                <div class="cases-tab scroll-fade-up-text">
+                    <span class="cases-tab-main">実績</span>
+                    <span class="cases-tab-sub">cases</span>
+                </div>
+
+                <div class="cases-grid">
+                    <article class="case-card case-row scroll-fade-up-text">
+                        <a href="https://hakobunemarche.com/" target="_blank" rel="noopener noreferrer"
+                            class="case-row-image-link" aria-label="ハコブネマルシェの詳細">
+                            <div class="case-image-wrapper">
+                                <img src="media/ハコブネマルシェ.png" alt="ハコブネマルシェECサイトの画面" class="case-image"
+                                    loading="lazy" width="480" height="300">
+                            </div>
+                        </a>
+                        <div class="case-row-content">
+                            <h3 class="case-title"><a href="https://hakobunemarche.com/" target="_blank"
+                                    rel="noopener noreferrer">ハコブネマルシェ</a></h3>
+                            <p class="case-row-description">
+                                セキ社で「事業者（農家・加工業者）の困りごとをECで解決する」方針が定まり、その課題感に共感した起業塾生4名がセキ社員と共に
+                                ECサイトを立ち上げました（2024年10月）。このマッチングは胡さんが先導。その後はSNSなどの広報、商品掲載の営業、
+                                ECサイトと商品ページの整理を役割分担で運用。2025年4月には二期生募集を学生主導で実施し、約6名を新規に確保。
+                                現在も分担運営を継続しています。
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="case-card case-row scroll-fade-up-text">
+                        <a href="https://dx-ehime.jp/archives/23606" target="_blank" rel="noopener noreferrer"
+                            class="case-row-image-link" aria-label="えひめGCIコミュニティの詳細">
+                            <div class="case-image-wrapper">
+                                <img src="media/えひめGCI.png" alt="えひめGCIコミュニティの勉強会参加者の様子" class="case-image" loading="lazy"
+                                    width="480" height="300">
+                            </div>
+                        </a>
+                        <div class="case-row-content">
+                            <h3 class="case-title"><a href="https://dx-ehime.jp/archives/23606" target="_blank"
+                                    rel="noopener noreferrer">えひめGCIコミュニティ</a></h3>
+                            <p class="case-row-description">
+                                データサイエンス学習の孤独と継続課題に対し、対面勉強会と属性を越えた交流設計、インターン接続を実装。
+                                学びを「続けられる環境」と「地域で実践できる場」に変え、地域課題解決へスキルを還元する基盤を形成しました。
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="case-card case-row scroll-fade-up-text">
+                        <div class="case-image-wrapper">
+                            <img src="media/動画案件.png" alt="動画作成案件のプロジェクト風景" class="case-image" loading="lazy"
+                                width="480" height="300">
+                        </div>
+                        <div class="case-row-content">
+                            <h3 class="case-title">動画作成案件</h3>
+                            <p class="case-row-description">
+                                教育コンテンツ制作における進行管理と品質担保体制の不在に対し、制作PMO、スケジュール管理、品質チェック、
+                                納品管理を一体で実装。プロジェクト管理表・品質基準書・納品レポートを整備し、継続運用へ移行しました。
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="case-card case-row scroll-fade-up-text">
+                        <div class="case-image-wrapper">
+                            <img src="media/工学部シンポジウム.png" alt="工学部シンポジウムのステージとパネルの様子" class="case-image"
+                                loading="lazy" width="480" height="300">
+                        </div>
+                        <div class="case-row-content">
+                            <h3 class="case-title">工学部シンポジウム</h3>
+                            <p class="case-row-description">
+                                属人化していた大規模イベント運営に対し、事務局運営、参加者管理、当日オペレーション、記録作成までを体系化。
+                                運営マニュアルと振り返りデータを整備し、次年度も再現可能な継続運営体制へ移行しました。
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section⑥: 問い合わせ -->
+        <section id="contact" class="final-cta">
+            <div class="container">
+                <h2 class="final-cta-title contact-main-title scroll-fade-up-text scroll-underline-title">お問い合わせ</h2>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="issue">困りごと</label>
+                        <textarea id="issue" name="issue" rows="3" required
+                            placeholder="地域で感じている課題や困っていることをご記入ください"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="field">現場</label>
+                        <input type="text" id="field" name="field" required placeholder="例：松山市・農業・観光など">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="stakeholders">関係者</label>
+                        <input type="text" id="stakeholders" name="stakeholders" required placeholder="例：地域住民・行政・企業など">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeline">期限感</label>
+                        <input type="text" id="timeline" name="timeline" required placeholder="例：3ヶ月以内・来年度中など">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large btn-full" id="submitBtn">無料相談を申し込む</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="media/ロゴ.png" alt="学チャレ合同会社ロゴ" class="footer-logo-img">
+                </div>
+                <p class="footer-tagline">綺麗事より、事業の実装を。</p>
+                <div class="footer-links">
+                    <a href="policy.html">ポリシー</a>
+                    <a href="#cases">実績</a>
+                    <a href="https://www.ccr.ehime-u.ac.jp/ehime-entre/#/" target="_blank"
+                        rel="noopener noreferrer">起業塾</a>
+                    <a href="#contact">相談する</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 学チャレ合同会社 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+

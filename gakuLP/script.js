@@ -109,6 +109,55 @@ animatedElements.forEach(element => {
     observer.observe(element);
 });
 
+// Scroll-linked text fade and underline animation
+const scrollFadeUpTextElements = document.querySelectorAll('.scroll-fade-up-text');
+const scrollUnderlineTitles = document.querySelectorAll('.scroll-underline-title');
+let scrollLinkedAnimationFrame = null;
+
+const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+
+const updateScrollLinkedEffects = () => {
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    const fadeStart = viewportHeight * 0.95;
+    const fadeEnd = viewportHeight * 0.55;
+    const underlineRange = viewportHeight * 0.55;
+    const viewportCenter = viewportHeight * 0.5;
+
+    scrollFadeUpTextElements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        const fadeProgress = clamp((fadeStart - rect.top) / (fadeStart - fadeEnd), 0, 1);
+        element.style.setProperty('--fade-progress', fadeProgress.toFixed(3));
+    });
+
+    scrollUnderlineTitles.forEach((title) => {
+        const rect = title.getBoundingClientRect();
+        const titleCenter = rect.top + (rect.height / 2);
+
+        let underlineProgress = 1;
+        if (titleCenter > viewportCenter) {
+            underlineProgress = 1 - clamp((titleCenter - viewportCenter) / underlineRange, 0, 1);
+        }
+
+        title.style.setProperty('--underline-progress', underlineProgress.toFixed(3));
+    });
+
+    scrollLinkedAnimationFrame = null;
+};
+
+const requestScrollLinkedEffectsUpdate = () => {
+    if (scrollLinkedAnimationFrame !== null) {
+        return;
+    }
+    scrollLinkedAnimationFrame = window.requestAnimationFrame(updateScrollLinkedEffects);
+};
+
+window.addEventListener('scroll', requestScrollLinkedEffectsUpdate, { passive: true });
+window.addEventListener('resize', requestScrollLinkedEffectsUpdate);
+
+if (scrollFadeUpTextElements.length > 0 || scrollUnderlineTitles.length > 0) {
+    requestScrollLinkedEffectsUpdate();
+}
+
 // ========================================
 // Form Handling
 // ========================================
